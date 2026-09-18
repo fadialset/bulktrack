@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
+const pagesBase = process.env.GITHUB_PAGES === 'true' ? '/bulktrack/' : '/';
+
 export default defineConfig({
+  base: pagesBase,
   server: {
     port: 5173,
     host: '127.0.0.1',
@@ -15,14 +18,14 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/*.png', 'sample-weekly-plan.json', 'exercise-images/*'],
       manifest: {
-        id: '/',
+        id: pagesBase,
         name: 'BulkTrack',
         short_name: 'BulkTrack',
         description: 'Simple personal weekly training tracker',
         lang: 'en',
         dir: 'ltr',
-        start_url: '/',
-        scope: '/',
+        start_url: pagesBase,
+        scope: pagesBase,
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#0b0d10',
@@ -36,7 +39,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,woff2,webp,jpg,jpeg}'],
-        navigateFallback: '/index.html',
+        navigateFallback: `${pagesBase}index.html`,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,

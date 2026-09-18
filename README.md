@@ -17,6 +17,14 @@ npm run dev
 
 Open `http://127.0.0.1:5173/`.
 
+## GitHub Pages
+
+The live app is the Vite `dist` output, not the source files. Pushing `main` builds and deploys via GitHub Actions.
+
+In the repo: **Settings → Pages → Source → GitHub Actions**.
+
+App URL: `https://fadialset.github.io/bulktrack/`
+
 ## Install on your phone
 
 ```bash

@@ -1,5 +1,6 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
+import { publicUrl } from '../utils/assets';
 
 @customElement('machine-image')
 export class MachineImage extends LitElement {
@@ -37,10 +38,10 @@ export class MachineImage extends LitElement {
   @state() private failed = false;
   @state() private resolved = '';
 
-  updated(changed: Map<string, unknown>): void {
+  willUpdate(changed: Map<string, unknown>): void {
     if (changed.has('src')) {
       this.failed = false;
-      this.resolved = this.src;
+      this.resolved = publicUrl(this.src);
     }
   }
 
