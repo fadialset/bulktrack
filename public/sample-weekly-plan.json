@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "type": "bulkTrackWeeklyPlan",
+  "week": {
+    "number": 5,
+    "startDate": "2026-09-21",
+    "endDate": "2026-09-27"
+  },
+  "targets": {
+    "goal": "lean_bulk",
+    "targetWeightKg": 72,
+    "weeklyWeightGainKg": {
+      "min": 0.2,
+      "max": 0.3
+    },
+    "proteinGrams": 140,
+    "calorieGuidance": 2600,
+    "waterLitres": 2.5,
+    "creatineGrams": 5,
+    "mealGuidance": [
+      "protein-rich breakfast",
+      "proper lunch",
+      "Syrian dinner",
+      "night protein shake"
+    ]
+  },
+  "coachNote": "Weight is increasing at the correct rate. Increase chest press and lat pulldown this week. Keep shoulder press unchanged.",
+  "schedule": [
+    { "day": "monday", "type": "gym", "workoutId": "full_body_a" },
+    { "day": "tuesday", "type": "swimming" },
+    { "day": "wednesday", "type": "gym", "workoutId": "full_body_b" },
+    { "day": "thursday", "type": "gym", "workoutId": "full_body_c" },
+    { "day": "friday", "type": "delivery_recovery" },
+    { "day": "saturday", "type": "delivery_recovery" },
+    { "day": "sunday", "type": "weekly_review" }
+  ],
+  "workouts": [
+    {
+      "id": "full_body_a",
+      "name": "Full Body A",
+      "estimatedMinutes": 55,
+      "exercises": [
+        { "id": "chest_press", "name": "Chest Press", "machine": "Technogym Chest Press", "machineImage": "/exercise-images/chest-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 32.5, "restSeconds": 90, "weightStepKg": 5, "warmup": { "enabled": true, "instruction": "1 light set × 12 reps" }, "alternatives": [{ "exerciseId": "incline_chest_press", "name": "Incline Chest Press", "reason": "Machine unavailable", "targetWeightKg": 27.5 }] },
+        { "id": "lat_pulldown", "name": "Lat Pulldown", "machineImage": "/exercise-images/lat-pulldown.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 37.5, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "leg_press", "name": "Leg Press", "machineImage": "/exercise-images/leg-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 80, "restSeconds": 120, "weightStepKg": 5 },
+        { "id": "shoulder_press", "name": "Shoulder Press", "machineImage": "/exercise-images/shoulder-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 20, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "biceps_curl", "name": "Biceps Curl Machine", "machineImage": "/exercise-images/biceps-curl.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 15, "restSeconds": 75, "weightStepKg": 2.5 },
+        { "id": "triceps_pushdown", "name": "Triceps Pushdown", "machineImage": "/exercise-images/triceps-pushdown.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 20, "restSeconds": 75, "weightStepKg": 2.5 }
+      ]
+    },
+    {
+      "id": "full_body_b",
+      "name": "Full Body B",
+      "estimatedMinutes": 55,
+      "exercises": [
+        { "id": "incline_chest_press", "name": "Incline Chest Press", "machineImage": "/exercise-images/incline-chest-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 30, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "lat_pulldown", "name": "Lat Pulldown", "machineImage": "/exercise-images/lat-pulldown.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 37.5, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "seated_row", "name": "Seated Row", "machineImage": "/exercise-images/seated-row.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 32.5, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "shoulder_press", "name": "Shoulder Press", "machineImage": "/exercise-images/shoulder-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 20, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "leg_press", "name": "Leg Press", "machineImage": "/exercise-images/leg-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 80, "restSeconds": 120, "weightStepKg": 5 },
+        { "id": "biceps_curl", "name": "Biceps Curl Machine", "machineImage": "/exercise-images/biceps-curl.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 15, "restSeconds": 75, "weightStepKg": 2.5 }
+      ]
+    },
+    {
+      "id": "full_body_c",
+      "name": "Full Body C",
+      "estimatedMinutes": 55,
+      "exercises": [
+        { "id": "chest_press", "name": "Chest Press", "machineImage": "/exercise-images/chest-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 32.5, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "lat_pulldown", "name": "Lat Pulldown", "machineImage": "/exercise-images/lat-pulldown.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 37.5, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "leg_press", "name": "Leg Press", "machineImage": "/exercise-images/leg-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 80, "restSeconds": 120, "weightStepKg": 5 },
+        { "id": "shoulder_press", "name": "Shoulder Press", "machineImage": "/exercise-images/shoulder-press.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 20, "restSeconds": 90, "weightStepKg": 5 },
+        { "id": "triceps_pushdown", "name": "Triceps Pushdown", "machineImage": "/exercise-images/triceps-pushdown.webp", "sets": 3, "repRange": { "min": 10, "max": 12 }, "targetWeightKg": 20, "restSeconds": 75, "weightStepKg": 2.5 },
+        { "id": "rear_delt", "name": "Rear Delt / Reverse Pec Deck", "machineImage": "/exercise-images/rear-delt.webp", "sets": 3, "repRange": { "min": 12, "max": 15 }, "targetWeightKg": 15, "restSeconds": 60, "weightStepKg": 2.5 }
+      ]
+    }
+  ]
+}
