@@ -19,11 +19,11 @@ Open `http://127.0.0.1:5173/`.
 
 ## GitHub Pages
 
-The live app is the Vite `dist` output, not the source files. Pushing `main` builds and deploys via GitHub Actions.
+GitHub cannot run TypeScript. `npm run build` writes a production site to `docs/`.
 
-In the repo: **Settings → Pages → Source → GitHub Actions**.
+If Pages is **Deploy from a branch** (`main`), the live app is `https://fadialset.github.io/bulktrack/docs/`.
 
-App URL: `https://fadialset.github.io/bulktrack/`
+Optional: **Settings → Pages → Folder → `/docs`** so the app is at `https://fadialset.github.io/bulktrack/`.
 
 ## Install on your phone
 

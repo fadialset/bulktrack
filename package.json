@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-icons.mjs && node scripts/generate-exercise-images.mjs && tsc --noEmit && vite build",
+    "build": "node scripts/generate-icons.mjs && node scripts/generate-exercise-images.mjs && tsc --noEmit && vite build && node scripts/publish-pages.mjs",
     "preview": "vite preview",
     "icons": "node scripts/generate-icons.mjs",
     "exercise-images": "node scripts/generate-exercise-images.mjs"
